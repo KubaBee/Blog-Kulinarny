@@ -1,0 +1,35 @@
+.container{
+    text-align: center;
+}
+
+.title{
+    text-align: left !important;
+}
+
+#dish_image{
+    display: flex;
+    justify-content: center;
+}
+
+#dish_image img{
+    border-radius: 15px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#intro {
+    text-transform: capitalize;
+    border-right: gray solid;
+    border-radius: 15px;
+
+}
+
+#skladniki li, #kroki li{
+    text-align: left;
+    padding: 0;
+}
+
+#skladniki ul{
+    margin-left: 0;
+}

@@ -1,0 +1,31 @@
+.container{
+    text-align: center;
+}
+
+.title{
+    text-align: left !important;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.prof{
+    display: flex;
+    justify-content: center;
+}
+
+.prof > img{
+    max-width: 70%;
+    border-radius: 10px;
+}
+
+.opis{
+    padding: 0 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .col-4, .col-6{
+        width: 100%;
+    }
+}

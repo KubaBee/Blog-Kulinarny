@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl" class="theme-light">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Kulinarny - strona głowna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../styles/styles.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+<div class="container">
+    <div class="row upper">
+        <div class="title col-10">Blog Kulinarny</div>
+        <div id="logo" class="col-2"><img src="../static/logo.png" alt="logo"></div>
+    </div>
+    <div class="row">
+        <nav class="col-12">
+            <ul class="nav col-6 left">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="kategorie.html">Kategorie</a></li>
+                <li><a href="kontakt.html">O nas</a></li>
+                <li><img id="switch" src="../static/theme.png" onclick="changeTheme()" alt="theme"></li>
+            </ul>
+            <div class="nav col-6 right search">
+                <label for="search_input"></label><input placeholder="Search for a dish" id="search_input" value="" type="text">
+                <button id="submit_search" type="submit" onclick="searchFor()"><i class="fa fa-search"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="row" id="dashboard">
+        <a href="przepis.html">
+            <div class="single col-8">
+                <div class="internal">Spaghetti Bolognese</div>
+                <div class="hidden">
+                    <p>Duration: 50 min</p>
+                    <p style="width: 70%">Mauris erat sit amet tristique. Phasellus cursus vitae justo sed dignissim. Morbi pharetra velit eu semper tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+            </div>
+        </a>
+        <a href="przepis2.html">
+            <div class="single col-4">
+                <div class="internal">Spaghetti alla carbonara</div>
+                <div class="hidden">
+                    <p>Duration: 70 min</p>
+                    <p>Aliquam non neque dapibus, porttitor sapien non, tempor orci. Donec eu pharetra orci. Donec nec ante eget ligula dictum sodales non vel nisi.</p>
+                </div>
+            </div>
+        </a>
+        <a href="przepis3.html">
+            <div class="single col-4">
+                <div class="internal">Paszteciki z ciasta francuskiego</div>
+                <div class="hidden">
+                    <p>Duration: 20 min</p>
+                    <p>Aliquam non neque dapibus, porttitor sapien non, tempor orci. Donec eu pharetra orci. Donec nec ante eget ligula dictum sodales non vel nisi.</p>
+                </div>
+            </div>
+        </a>
+        <a href="przepis.html">
+            <div class="single col-4">
+                <div class="internal">Crab and chickpea korma</div>
+                <div class="hidden">
+                    <p>Duration: 45 min</p>
+                    <p>Aliquam non neque dapibus, porttitor sapien non, tempor orci. Donec eu pharetra orci. Donec nec ante eget ligula dictum sodales non vel nisi.</p>
+                </div>
+            </div>
+        </a>
+        <a href="przepis2.html">
+            <div class="single col-4">
+                <div class="internal">Turkey and plantain toastie</div>
+                <div class="hidden">
+                    <p>Duration: 30 min</p>
+                    <p>Aliquam non neque dapibus, porttitor sapien non, tempor orci. Donec eu pharetra orci. Donec nec ante eget ligula dictum sodales non vel nisi.</p>
+                </div>
+            </div>
+        </a>
+        <a href="przepis3.html">
+            <div class="single col-8">
+                <div class="internal">Pumpkin seed and lime bread</div>
+                <div class="hidden">
+                    <p>Duration: 20 min</p>
+                    <p style="width: 70%">Aliquam non neque dapibus, porttitor sapien non, tempor orci. Donec eu pharetra orci. Donec nec ante eget ligula dictum sodales non vel nisi.</p>
+                </div>
+            </div>
+        </a>
+        <a href="przepis.html">
+            <div class="single col-4">
+                <div class="internal">Pesto and avocado spaghetti</div>
+                <div class="hidden">
+                    <p>Duration: 50 min</p>
+                    <p>Aliquam non neque dapibus, porttitor sapien non, tempor orci. Donec eu pharetra orci. Donec nec ante eget ligula dictum sodales non vel nisi.</p>
+                </div>
+            </div>
+        </a>
+        <a href="przepis.html">
+            <div class="single col-4">
+                <div class="internal">Spelt and spinach bread</div>
+                <div class="hidden">
+                    <p>Duration: 30 min</p>
+                    <p>Aliquam non neque dapibus, porttitor sapien non, tempor orci. Donec eu pharetra orci. Donec nec ante eget ligula dictum sodales non vel nisi.</p>
+                </div>
+            </div>
+        </a>
+        <a href="przepis3.html">
+            <div class="single col-4">
+                <div class="internal">Aubergine and poppy seed salad</div>
+                <div class="hidden">
+                    <p>Duration: 60 min</p>
+                    <p>Aliquam non neque dapibus, porttitor sapien non, tempor orci. Donec eu pharetra orci. Donec nec ante eget ligula dictum sodales non vel nisi.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <footer>
+        <div class="col-12 social">
+            <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.snapchat.com/"><i class="icon ion-social-snapchat"></i></a>
+            <a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <p class="copyright">Techniki Internetowe © 2022</p>
+        <p class="copyright">Wykonali: Jakub Pszczoła i Nadia Maksymiuk</p>
+
+    </footer>
+</div>
+<script src="../scripts/index.js"></script>
+</body>
+</html>

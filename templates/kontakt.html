@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl" class="theme-light">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Kulinarny - o nas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../styles/styles.css">
+    <link type="text/css" rel="stylesheet" href="../styles/kontakt.css">
+<body>
+<div class="container">
+    <div class="row upper">
+        <div class="title col-10">Blog Kulinarny</div>
+        <div id="logo" class="col-2"><img src="../static/logo.png" alt="logo"></div>
+    </div>
+    <div class="row">
+        <nav class="col-12">
+            <ul class="nav col-6 left">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="kategorie.html">Kategorie</a></li>
+                <li><a href="kontakt.html">O nas</a></li>
+                <li><img id="switch" src="../static/theme.png" onclick="changeTheme()" alt="theme"></li>
+            </ul>
+            <div class="nav col-6 right search">
+                <label for="search_input"></label><input placeholder="Search for a dish" id="search_input" value="" type="text">
+                <button id="submit_search" type="submit" onclick="searchFor()"><i class="fa fa-search"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h1 class="row">Jakub Pszczoła</h1>
+            <div class="row prof"><img src="../static/prof1.jpg" alt="Profile Picture"></div>
+            <div class="opis">
+                <p>Duis arcu elit, finibus sed ex sed, viverra blandit risus. <br><br>Nam vulputate sollicitudin metus, quis imperdiet neque volutpat a. Pellentesque placerat consequat erat, ut faucibus enim iaculis sit amet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam tincidunt ligula vitae arcu tincidunt, sed facilisis mauris dictum. Pellentesque sed purus a quam semper aliquam. Ut at nisi in massa feugiat congue ac sit amet elit. <br><br> Fusce rhoncus sollicitudin diam, sed luctus lectus tempus id. Donec pellentesque lectus id turpis commodo congue. Nam fringilla massa ex, viverra ultricies lacus sagittis vel. Sed at vehicula eros, cursus tempus mauris.<br><br>
+                    Donec tempor, sem sed tempus blandit, augue quam fringilla justo, et ultrices justo mauris a lacus. Vestibulum interdum feugiat lorem. Curabitur eu lectus pretium, pretium urna tempus, mattis mauris. Nulla id eleifend eros. In vitae cursus ex. Quisque faucibus interdum pretium. Sed sit amet rhoncus nisl. Vivamus accumsan mi sit amet dolor ultrices, nec sodales eros scelerisque. Curabitur posuere iaculis enim nec porttitor. Sed quis varius augue. Ut eu diam libero. Donec et nibh in arcu dictum ullamcorper. Fusce tincidunt cursus eros a condimentum. Integer commodo elit a finibus ornare. Suspendisse ac nisi ac erat dignissim iaculis et vitae ante. In condimentum libero diam, molestie pretium metus venenatis vel.</p>
+                <p>Kontakt: lorem.ipsum@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <h1 class="row">Nadia Maksymiuk</h1>
+            <div class="row prof"><img src="../static/prof2.jpg" alt="Profile Picture"></div>
+            <div class="opis">
+                <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras non fermentum metus. Vivamus et mauris orci. Maecenas molestie sapien enim, aliquam pretium diam scelerisque in.<br><br> Duis gravida ac magna sit amet accumsan. Proin id risus vehicula, varius mauris non, rhoncus odio. Maecenas commodo nunc metus, laoreet elementum diam hendrerit sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a urna felis. Mauris at ornare urna. In hac habitasse platea dictumst. Donec eget congue ex, vel condimentum orci. In a egestas enim.
+                    Sed ac mi viverra, vulputate felis tempus, tincidunt lectus. Morbi aliquet cursus odio sed auctor. <br><br> Sed eget dui vehicula, dapibus orci vitae, lobortis felis. Duis id tincidunt magna, ut elementum metus. Curabitur a leo a enim varius fringilla. Quisque commodo non ipsum sit amet suscipit. In vehicula leo ut venenatis lacinia. Aenean consequat tellus eu rutrum pellentesque. Mauris tempus nulla vel arcu iaculis molestie. Vivamus nunc justo, tristique eget risus non, sollicitudin vulputate lacus.
+                    Mauris semper blandit nibh at sollicitudin. Curabitur posuere iaculis enim nec porttitor. Sed quis varius augue. Ut eu diam libero. Donec et nibh in arcu dictum ullamcorper. Fusce tincidunt cursus eros a condimentum. Integer commodo elit a finibus ornare. Suspendisse ac nisi ac erat dignissim iaculis et vitae ante. In condimentum libero diam, molestie pretium metus venenatis vel.</p>
+                <p>Kontakt: lorem.ipsum@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <h3 class="col-12">Gdzie nas znaleźć?</h3>
+            <div class="col-6" id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6315.402394929508!2d19.928974942310276!3d50.06476484501061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bcb4b298bdf%3A0xf1258b611a8ba111!2sRamen%20People!5e0!3m2!1spl!2spl!4v1642878312953!5m2!1spl!2spl" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="col-6" id="map2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.143557466498!2d19.925472415663602!3d50.064873079424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b2e77d7996d%3A0xcefbf204b96c209d!2sMOLAM%20THAI%20CANTEEN%20%26%20BAR!5e0!3m2!1spl!2spl!4v1642878356256!5m2!1spl!2spl" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+    <footer>
+        <div class="col-12 social">
+            <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.snapchat.com/"><i class="icon ion-social-snapchat"></i></a>
+            <a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <p class="copyright">Techniki Internetowe © 2022</p>
+        <p class="copyright">Wykonali: Jakub Pszczoła i Nadia Maksymiuk</p>
+    </footer>
+</div>
+<script src="../scripts/index.js"></script>
+</body>
+</html>

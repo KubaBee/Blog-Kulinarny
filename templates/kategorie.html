@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl" class="theme-light">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Kulinarny - kategorie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../styles/styles.css" >
+    <link type="text/css" rel="stylesheet" href="../styles/kat.css" >
+<body>
+<div class="container">
+    <div class="row upper">
+        <div class="title col-10">Blog Kulinarny</div>
+        <div id="logo" class="col-2"><img src="../static/logo.png" alt="logo"></div>
+    </div>
+    <div class="row">
+        <nav class="col-12">
+            <ul class="nav col-6 left">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="kategorie.html">Kategorie</a></li>
+                <li><a href="kontakt.html">O nas</a></li>
+                <li><img id="switch" src="../static/theme.png" onclick="changeTheme()" alt="theme"></li>
+            </ul>
+            <div class="nav col-6 right search">
+                <label for="search_input"></label><input placeholder="Search for a dish" id="search_input" value="" type="text">
+                <button id="submit_search" type="submit" onclick="searchFor()"><i class="fa fa-search"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="row dash">
+        <div class="col-4 card">
+            <img src="../static/sniadania.jpg" alt="placeholder">
+            <div class="content">
+                <h4><b>Śniadania</b></h4>
+                <p>Tasty recipes for good start</p>
+            </div>
+        </div>
+        <div class="col-4 card">
+            <img src="../static/zarcie.jpg" alt="placeholder">
+            <div class="content">
+                <h4><b>Obiady</b></h4>
+                <p>Tasty recipes for good start</p>
+            </div>
+        </div>
+        <div class="col-4 card">
+            <img src="../static/kol.jpg" alt="placeholder">
+            <div class="content">
+                <h4><b>Kolacje</b></h4>
+                <p>Tasty recipes for good start</p>
+            </div>
+        </div>
+        <div class="col-4 card">
+            <img src="../static/zuy4-2.jpg" alt="placeholder">
+            <div class="content">
+                <h4><b>Zupy</b></h4>
+                <p>Tasty recipes for good start</p>
+            </div>
+        </div>
+        <div class="col-4 card">
+            <img src="../static/carb.jpg" alt="placeholder">
+            <div class="content">
+                <h4><b>Makarony</b></h4>
+                <p>Tasty recipes for good start</p>
+            </div>
+        </div>
+        <div class="col-4 card">
+            <img src="../static/wege.jpg" alt="placeholder">
+            <div class="content">
+                <h4><b>Wegetariańskie</b></h4>
+                <p>Tasty recipes for good start</p>
+            </div>
+        </div>
+        </div>
+    <footer>
+        <div class="col-12 social">
+            <a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.snapchat.com/"><i class="icon ion-social-snapchat"></i></a>
+            <a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <p class="copyright">Techniki Internetowe © 2022</p>
+        <p class="copyright">Wykonali: Jakub Pszczoła i Nadia Maksymiuk</p>
+    </footer>
+</div>
+<script src="../scripts/index.js"></script>
+</body>
+</html>
